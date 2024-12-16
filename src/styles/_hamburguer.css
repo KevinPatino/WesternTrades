@@ -1,0 +1,87 @@
+.hamburger {
+    position: static;
+    padding-left: 20px;
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    display: block;
+    width: 30px;
+    height: 5px;
+    margin-bottom: 5px;
+    background-color: var(--color-primary);
+    border-radius: 5px;
+}
+
+nav {
+    display: flex;
+    background-color: var(--color-secondary)
+    /* justify-content: center; */
+}
+.nav-links {
+    position: relative;
+    width: 100%;
+    top: 5rem;
+    display: flex;
+    background-color: var(--color-primary);
+    display: none;
+    margin: 1rem 0;
+    max-width: 100ch;
+}
+
+.nav-links img {
+    position: absolute;
+    left: 50px;
+    top: 20px;
+    width: 80px;
+}
+
+.nav-links a {
+    display: block;
+    text-align: center;
+    padding: 5px 0;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 30px; 
+    color: var(--text-primary);
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+    background-color: var(--color-primary);
+}
+
+.expanded {
+    display: unset;
+    position:
+}
+
+@media screen and (min-width: 636px) {
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .nav-links {
+        /* margin-left: 5em; */
+        display: flex;
+        justify-content: space-around;
+        position: static;
+        width: auto;
+        background: none;
+    }
+
+    .nav-links a {
+        display: inline-block;
+        padding: 15px 20px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+}

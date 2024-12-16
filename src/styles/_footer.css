@@ -1,0 +1,85 @@
+footer {
+    background-color: var(--color-secondary);
+    color: var(--text-primary);
+    display: grid;
+    padding-top: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "social services get-in-touch"
+    "copy copy copy"
+}
+
+.footer-social {
+    grid-area: social;
+    padding-bottom: 2rem;
+}
+
+.footer-social .social-elements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+}
+
+.footer-social .social-elements #wt-logo {
+    width: 100px;
+}
+
+.footer-social .social-elements p {
+    width: 70%;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer-social .social-elements .social {
+    display: flex;
+    gap: 20px;
+    padding: 1rem;
+}
+
+.footer-social .social-elements .social img{
+    width: 25px;
+}
+
+.footer-services {
+    grid-area: services;
+    padding-left: 4rem;
+}
+
+
+.footer-services .footer-services-elements h2{
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 2rem;   
+}
+
+.footer-services .footer-services-elements ul{
+    line-height: 2;
+}
+
+.footer-get-in-touch {
+    grid-area: get-in-touch;
+}
+
+.footer-get-in-touch p{
+    line-height: 2; 
+}
+
+.footer-get-in-touch h2{
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 2rem; 
+}
+
+.footer-copyright {
+    background-color: var(--color-primary);
+    grid-area: copy;
+    text-align: center;
+}
+
+.footer-copyright #copy {
+    color: var(--color-secondary);
+    font-weight: 600;
+}

@@ -9,8 +9,9 @@
     --background-dark: black;   
     
     /* Colores de texto */
-    --text-primary: #01161e;     
-    --text-secondary: #124559; 
+    --text-primary: #eef0f2;     
+    --text-secondary: #01161e; 
+    --text-tertiary: #93c53b;
     
     /* Colores de botones */
     --button-primary: #eef0f2;   
